@@ -1,0 +1,1140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title><?php echo isset($title) ? $title : 'Home';  ?></title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/custom.min.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+</head>
+
+<body>
+
+    <!-- Header Start -->
+    <header class="header">
+        <div class="header-top">
+            <a href="">
+                <i class="fa-solid fa-phone me-2"></i>
+                UAE: <span>+971 48839373</span>
+            </a>
+            <div class="header-top__lang">
+                <img src="images/lang-icon1.png" alt="image" class="img-fluid">
+                <select>
+                    <option>English</option>
+                </select>
+            </div>
+        </div>
+
+        <nav class="header-main navbar navbar-expand-lg">
+            <a class="navbar-brand header-main__logo" href="index.php">
+                <img src="images/logo.png" alt="img">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+                <ul class="navbar-nav header-main__nav">
+                    <li class="nav-item">
+                        <a class="nav-link <?= (basename($_SERVER['PHP_SELF']) == 'index.php') ? 'active' : '' ?>"
+                            href="index.php">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link <?= (basename($_SERVER['PHP_SELF']) == '#') ? 'active' : '' ?>" href="#">
+                            Products
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link <?= (basename($_SERVER['PHP_SELF']) == '#') ? 'active' : '' ?>" href="#">
+                            Media
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link <?= (basename($_SERVER['PHP_SELF']) == '#') ? 'active' : '' ?>" href="#">
+                            Projects
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link <?= (basename($_SERVER['PHP_SELF']) == '#') ? 'active' : '' ?>" href="#">
+                            Careers
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link <?= (basename($_SERVER['PHP_SELF']) == '#') ? 'active' : '' ?>" href="#">
+                            Countries
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link <?= (basename($_SERVER['PHP_SELF']) == '#') ? 'active' : '' ?>" href="#">
+                            News and Blogs
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link <?= (basename($_SERVER['PHP_SELF']) == '#') ? 'active' : '' ?>" href="#">
+                            Support
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link <?= (basename($_SERVER['PHP_SELF']) == '#') ? 'active' : '' ?>" href="#">
+                            Downloads
+                        </a>
+                    </li>
+                </ul>
+                <a href="" class="themeBtn">Get A Quote <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </nav>
+    </header>
+    <!-- Header End -->
+
+    <!-- Banner Start -->
+    <section class="banner bannerSlider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="bannerImg" data-background="images/banner1.jpg">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-7">
+                                <div class="bannerImg__content text-center">
+                                    <h1 data-swiper-parallax="-200">
+                                        From <span>Sunlight</span> to <span>Strength</span>
+                                    </h1>
+                                    <h2 data-swiper-parallax="-200">
+                                        Your <span>Ultimate Solar Solution</span>
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="bannerImg" data-background="images/banner2.jpg">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-7">
+                                <div class="bannerImg__content text-center">
+                                    <h1 data-swiper-parallax="-200">
+                                        From <span>Sunlight</span> to <span>Strength</span>
+                                    </h1>
+                                    <h2 data-swiper-parallax="-200">
+                                        Your <span>Ultimate Solar Solution</span>
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="bannerImg" data-background="images/banner3.jpg">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-7">
+                                <div class="bannerImg__content text-center">
+                                    <h1 data-swiper-parallax="-200">
+                                        From <span>Sunlight</span> to <span>Strength</span>
+                                    </h1>
+                                    <h2 data-swiper-parallax="-200">
+                                        Your <span>Ultimate Solar Solution</span>
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </section>
+    <!-- Banner End -->
+
+    <!-- About Us Start -->
+    <section class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="about-content">
+                        <h3 class="heading">Invest For a Brighter Tomorrow</h3>
+                        <h2 class="secHeading primary-color">Crown Micro Solar Inverters</h2>
+                        <p>
+                            Goodbye to the power outage with Crown Micro Global, a leading solar-powered solution
+                            provider.
+                            Our partnership with Crown Micro Inverter International was established through an official
+                            collaboration with the <strong>Power Pakistan Mission</strong>, utilising advanced solar
+                            technology for a
+                            sustainable energy solution at our Crown Micro Global Service Centres.
+                        </p>
+                        <p>
+                            As an emerging solar provider in Pakistan with a passion for cutting-edge energy solutions,
+                            we
+                            serve with imported inverters and solar energy installation systems to help Pakistan stay
+                            outage-free. As part of International Crown Micro’s global Inverter, we are present in
+                            Russia,
+                            Saudi Arabia, the UAE, China, Ghana, Nigeria, Kazakhstan, Uzbekistan, Bangladesh, Iraq,
+                            Tunisia,
+                            Morocco, Egypt, Sudan, Lebanon, Kenya, Ethiopia, Kuwait, Syria, Chile, and beyond.
+                        </p>
+                        <a href="" class="moreBtn">Read More <i class="fa-regular fa-circle-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Us End -->
+
+    <!-- Products Start -->
+    <section class="product">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="heading text-center mb-4">Our Products</h2>
+                    <div class="swiper productSlider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="product-card">
+                                    <h4 class="title">Solar Panels</h4>
+                                    <p>
+                                        Crown Micro Global Solar system is trusted for Solar Panels. We import the core
+                                        components
+                                        of a
+                                        solar panels with efficient solar energy. Our solar panels convert the sunlight
+                                        at
+                                        their
+                                        fullest
+                                        into electricity with German and Canadian photovoltaic (PV) cells. They also
+                                        provide
+                                        clean
+                                        energy.
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            <i class="fa-solid fa-circle-check"></i> Efficient Power Generation
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-circle-check"></i> Eco-friendly Energy Solution
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-circle-check"></i> Cost-effective Choice
+                                        </li>
+                                    </ul>
+                                    <a href="" class="moreBtn">
+                                        Read More <i class="fa-regular fa-circle-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="product-card product-card--yellow">
+                                    <h4 class="title">Variable Frequency Drives (VFDs)</h4>
+                                    <p>
+                                        Crown Micro Global Solar Solutions brings you advanced motor control devices to
+                                        regulate the
+                                        output and storage frequency of electricity generated by solar panels with
+                                        varying
+                                        voltage
+                                        and
+                                        frequency. Let us cover you with the following benefits.
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            <i class="fa-solid fa-circle-check"></i> Energy Efficiency Optimization
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-circle-check"></i> Smooth Speed Control
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-circle-check"></i> Extended Equipment Lifespan
+                                        </li>
+                                    </ul>
+                                    <a href="" class="moreBtn">
+                                        Read More <i class="fa-regular fa-circle-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="product-card product-card--green">
+                                    <h4 class="title">Energy Storage Systems (ESS)</h4>
+                                    <p>
+                                        Energy Storage Systems (ESS) are also among our products. We offer the ESS to
+                                        store
+                                        excess
+                                        energy for later use. The tested and trusted components empower the reliable
+                                        power
+                                        supply
+                                        with
+                                        enhanced efficiency of renewable energy integration.
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            <i class="fa-solid fa-circle-check"></i> Efficient Power Management
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-circle-check"></i> Reliable Energy Backup
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-circle-check"></i> Optimized Grid Stability
+                                        </li>
+                                    </ul>
+                                    <a href="" class="moreBtn">
+                                        Read More <i class="fa-regular fa-circle-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="product-card">
+                                    <h4 class="title">UPS</h4>
+                                    <p>
+                                        Crown Micro Global introduced the UPS with Crown Solar Energy backup power
+                                        system.
+                                        Our
+                                        durable
+                                        UPS system provides instant electricity during power outages, protecting
+                                        appliances
+                                        from
+                                        power
+                                        fluctuations with the following additional benefits.
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            <i class="fa-solid fa-circle-check"></i> Reliable Power Backup
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-circle-check"></i> Voltage Surge Protection
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-circle-check"></i> Uninterrupted Device Operation
+                                        </li>
+                                    </ul>
+                                    <a href="" class="moreBtn">
+                                        Read More <i class="fa-regular fa-circle-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="product-card product-card--yellow">
+                                    <h4 class="title">Solar System Accessories</h4>
+                                    <p>
+                                        Crown Micro Global Company also gets you all covered with high-quality and
+                                        reliable
+                                        solar
+                                        system
+                                        accessories. We provide essential components and solutions pertinent in solar
+                                        energy
+                                        setups
+                                        to
+                                        improve the performance of your solar power system.
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            <i class="fa-solid fa-circle-check"></i> Worldwide Trusted Accessories
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-circle-check"></i> Easily Available in Nationwide
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-circle-check"></i> Durable and Safe to Use
+                                        </li>
+                                    </ul>
+                                    <a href="" class="moreBtn">
+                                        Read More <i class="fa-regular fa-circle-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="product-card product-card--green">
+                                    <h4 class="title">Solar Inverters</h4>
+                                    <p>
+                                        Our German-technology solar inverters are ideal for city areas connected to the
+                                        national
+                                        grid.
+                                        Inverters are the must-have to run your solar energy system. They efficiently
+                                        convert solar
+                                        power into electricity for quick use with following plus points:
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            <i class="fa-solid fa-circle-check"></i> Reduces electricity bills
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-circle-check"></i> Appliance-friendly
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-circle-check"></i> Best Performance with Batteries
+                                        </li>
+                                    </ul>
+                                    <a href="" class="moreBtn">
+                                        Read More <i class="fa-regular fa-circle-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="product-card product-card--yellow">
+                                    <h4 class="title">Batteries</h4>
+                                    <p>
+                                        Our Batteries are energy storage products in our shelves. Foreign-assembled dry
+                                        and
+                                        acid
+                                        batteries provide longer power for various applications. The life durability of
+                                        both
+                                        batteries
+                                        are longer with reliability, efficiency with sustainability in the latest energy
+                                        systems.
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            <i class="fa-solid fa-circle-check"></i> Long-Lasting Power
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-circle-check"></i> Efficient Energy Storage
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-circle-check"></i> Reliable Backup Supply
+                                        </li>
+                                    </ul>
+                                    <a href="" class="moreBtn">
+                                        Read More <i class="fa-regular fa-circle-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="productSlider-prev swiper-button-prev"></div>
+                    <div class="productSlider-next swiper-button-next"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Products End -->
+
+    <!-- Process Start -->
+    <section class="process">
+        <div class="container">
+            <div class="process-head text-center mb-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-9">
+                        <h2 class="heading">Our Work Process</h2>
+                        <p>
+                            We’re an all-inclusive entity to deal in solar power systems. We procure the top quality
+                            solar
+                            and conduct research and analysis for best fit of your energy needs. Following we lay out
+                            the
+                            plan to provide you real-time solar energy supply.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="process-card">
+                        <h3 class="number number--fill">01</h3>
+                        <h2 class="title">Manufacturing</h2>
+                        <p>
+                            We are in signatory of our foreign company to have imported transfer of technology to
+                            manufacture world-class solar panels.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="process-card">
+                        <h3 class="number">02</h3>
+                        <h2 class="title">Research & Analysis</h2>
+                        <p>
+                            Our operating mechanism goes under the practical research and analysis to give you best of
+                            the
+                            output.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="process-card">
+                        <h3 class="number">03</h3>
+                        <h2 class="title">Project Planing</h2>
+                        <p>
+                            Bringing you the utmost excellence in power supply with enhanced solar power with predefined
+                            project planning.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Process End -->
+
+    <!-- Services Start -->
+    <section class="services">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <figure class="services-img">
+                    <img src="images/services1.webp" alt="image" class="img-fluid">
+                </figure>
+            </div>
+            <div class="col-md-6">
+                <div class="services-content">
+                    <h2 class="heading text-white">Commercial, Residential, and Industrial Solar Systems!</h2>
+                    <p>
+                        We deal in all Commercial, Residential, and Industrial Solar Systems, offering safe installation
+                        with safety power protocols to help you achieve sustainability and reduce your power costs.
+                    </p>
+                    <h4 class="title text-white">Commercial Solution</h4>
+                    <span class="progress-line"></span>
+                    <h4 class="title text-white">Residential Solution</h4>
+                    <span class="progress-line"></span>
+                    <h4 class="title text-white">Industrial Solution</h4>
+                    <span class="progress-line"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services End -->
+
+    <!-- Technology Start -->
+    <section class="technology">
+        <div class="container">
+            <div class="technology-content">
+                <h2 class="heading">Crown Micro Global Corporation Pioneer in Solar Technology, In Pakistan</h2>
+                <p>
+                    We’re happy to announce that we’re in Pakistan, bringing world-class solar technology from across
+                    the
+                    borders to help you avoid blackouts, fluctuations, and frequent power outages in rural to urban
+                    remote
+                    areas. As an extension of Crown Micro Global Inverter International, we bring the legacy of global
+                    expertise and engineering excellence. Get our globally recognised energy solution for homes,
+                    offices,
+                    and other businesses to save energy and save Pakistan.
+                </p>
+                <p>
+                    Crown Micro Global Pakistan proudly distributes international solar inverter systems nationwide,
+                    offering reliability, sustainability, and affordable costs for all residential, commercial, and
+                    industrial units. With expert guidance for the right tailored solution for your space needs. We
+                    offer
+                    custom solutions, as we love to hear about your electricity problems and design customised solutions
+                    to
+                    ensure a greener Pakistan with energy-efficient solar inverters.
+                </p>
+            </div>
+            <div class="row technology-cards">
+                <div class="col-md-4">
+                    <div class="technology-card">
+                        <figure class="technology-card__img">
+                            <img src="images/technology1.webp" alt="image" class="img-fluid">
+                        </figure>
+                        <div class="technology-card__content">
+                            <h4 class="title">Residential Solar Installation</h4>
+                            <p>
+                                Crown Micro solar inverter offers a residential power solution to maximize efficient
+                                energy
+                                use, featuring an LCD Inverter display to help manage and monitor your energy
+                                consumption.
+                                With solar panels, a hybrid, on-grid to off-grid variety of inverter ranges are
+                                available
+                                according to residential needs. Electricity Bills are tough to pay out of your pocket,
+                                but
+                                with the best solar inverters, you get a permanent, reliable solution with renewable
+                                energy.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="technology-card">
+                        <figure class="technology-card__img">
+                            <img src="images/technology2.webp" alt="image" class="img-fluid">
+                        </figure>
+                        <div class="technology-card__content">
+                            <h4 class="title">Commercial Solar Installation</h4>
+                            <p>
+                                No worries about paying high bills for commercial businesses with Crown Micro Global,
+                                which
+                                saves your Bills cost with a low-maintenance, durable energy power solar inverter
+                                solution.
+                                Whether your demand is big or small, our optimal power inverter scalable solution stops
+                                the
+                                heat waves. It ensures the smooth operation of all your machinery, allowing you to
+                                design
+                                and manufacture your commercial products without incurring high costs.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="technology-card">
+                        <figure class="technology-card__img">
+                            <img src="images/technology3.webp" alt="image" class="img-fluid">
+                        </figure>
+                        <div class="technology-card__content">
+                            <h4 class="title">Industrial Solar Installation</h4>
+                            <p>
+                                On-Grid, Off-Grid, and Hybrid product design by Crown Micro Global offers a sustainable,
+                                reliable, innovative, and cost-effective solution for your large or small industrial
+                                infrastructure, helping to reduce your carbon footprint. With sophisticated solar
+                                panels,
+                                batteries, and all solar installation equipment, we offer a sustainable solution from
+                                input
+                                to power output. Manage your current, double your ROI, and save on your electric bill by
+                                Paying Zero.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Technology End -->
+
+    <!-- Rated Start -->
+    <section class="rated">
+        <div class="container">
+            <div class="rated-head text-center">
+                <h2 class="heading primary-color">Top Rated Products</h2>
+                <p>
+                    Our top-rated products pertinent to solar energy solutions. We procure the solar panels with maximum
+                    efficiency. Our trusted inverters run a seamless power conversion. While, batteries provide
+                    long-lasting
+                    backup for flow of energy.
+                </p>
+            </div>
+            <div class="swiper ratedSlider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <figure class="rated-img">
+                            <img src="images/rated1.png" alt="image" class="img-fluid">
+                        </figure>
+                    </div>
+                    <div class="swiper-slide">
+                        <figure class="rated-img">
+                            <img src="images/rated2.png" alt="image" class="img-fluid">
+                        </figure>
+                    </div>
+                    <div class="swiper-slide">
+                        <figure class="rated-img">
+                            <img src="images/rated3.png" alt="image" class="img-fluid">
+                        </figure>
+                    </div>
+                    <div class="swiper-slide">
+                        <figure class="rated-img">
+                            <img src="images/rated4.png" alt="image" class="img-fluid">
+                        </figure>
+                    </div>
+                    <div class="swiper-slide">
+                        <figure class="rated-img">
+                            <img src="images/rated1.png" alt="image" class="img-fluid">
+                        </figure>
+                    </div>
+                    <div class="swiper-slide">
+                        <figure class="rated-img">
+                            <img src="images/rated2.png" alt="image" class="img-fluid">
+                        </figure>
+                    </div>
+                    <div class="swiper-slide">
+                        <figure class="rated-img">
+                            <img src="images/rated3.png" alt="image" class="img-fluid">
+                        </figure>
+                    </div>
+                    <div class="swiper-slide">
+                        <figure class="rated-img">
+                            <img src="images/rated4.png" alt="image" class="img-fluid">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Rated End -->
+
+    <!-- Benefit Start -->
+    <section class="benefit">
+        <div class="container">
+            <div class="benefit-head">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <h3 class="subHeading heading--border">benefits</h3>
+                        <h2 class="heading">Solar Energy Solutions Contribute Huge in Clean Power Generation</h2>
+                        <a href="" class="moreBtn">
+                            Read More <i class="fa-regular fa-circle-arrow-right"></i>
+                        </a>
+                    </div>
+                    <div class="col-md-6">
+                        <p>
+                            World critics must need to agree on the role of solar energy solutions as the cleanest and
+                            safest form of energy. No carbon emissions, no noise.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-0 benefit-cards">
+                <div class="col-lg col-sm-6">
+                    <div class="benefit-card">
+                        <figure class="benefit-card__icon">
+                            <img src="images/benefit-icon1.png" alt="image" class="img-fluid">
+                        </figure>
+                        <h5 class="number">20+</h5>
+                        <h4 class="title">Offices Worldwide</h4>
+                    </div>
+                </div>
+                <div class="col-lg col-sm-6">
+                    <div class="benefit-card">
+                        <figure class="benefit-card__icon">
+                            <img src="images/benefit-icon2.png" alt="image" class="img-fluid">
+                        </figure>
+                        <h5 class="number">65,000+</h5>
+                        <h4 class="title">Product Sold Globally</h4>
+                    </div>
+                </div>
+                <div class="col-lg col-sm-6">
+                    <div class="benefit-card">
+                        <figure class="benefit-card__icon">
+                            <img src="images/benefit-icon3.png" alt="image" class="img-fluid">
+                        </figure>
+                        <h5 class="number">200+</h5>
+                        <h4 class="title">MW Installed Globally</h4>
+                    </div>
+                </div>
+                <div class="col-lg col-sm-6">
+                    <div class="benefit-card">
+                        <figure class="benefit-card__icon">
+                            <img src="images/benefit-icon4.png" alt="image" class="img-fluid">
+                        </figure>
+                        <h5 class="number">500+</h5>
+                        <h4 class="title">Trusted Clients</h4>
+                    </div>
+                </div>
+                <div class="col-lg col-sm-6">
+                    <div class="benefit-card">
+                        <figure class="benefit-card__icon">
+                            <img src="images/benefit-icon5.png" alt="image" class="img-fluid">
+                        </figure>
+                        <h5 class="number">300+</h5>
+                        <h4 class="title">Employees Around the Globe</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Benefit End -->
+
+    <!-- Innovations Start -->
+    <section class="innovations">
+        <div class="container">
+            <div class="row align-items-end">
+                <div class="col-md-6">
+                    <div class="innovations-content">
+                        <h2 class="heading">Providing Value With Innovations and Ongoing Products</h2>
+                        <p>
+                            With a cutting-edge solar solution, we offer a smooth and outage-free experience to our
+                            clients,
+                            providing lasting value at an affordable price in Pakistan. With solar panels installed and
+                            high-quality inverters, we offer an energy-efficient solar solution. In the solar PV Product
+                            industry, we also help with sourcing, financing, and manufacturing.
+                        </p>
+                        <p>
+                            For various grades and formats, including chunks, chips, powder, and ingots, we offer raw
+                            polycrystalline silicon for PV manufacturing. Our focus is client value and Innovative
+                            Products
+                            for a sustainable Power future.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <figure class="innovations-img">
+                        <img src="images/innovations1.webp" alt="image" clas="img-fluid">
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Innovations End -->
+
+    <!-- Worldwide Start -->
+    <section class="worldwide">
+        <div class="container">
+            <div class="worldwide-head text-center mb-5">
+                <h2 class="secHeading theme-color">Worldwide Trusted Solar Solutions in Pakistan</h2>
+                <p>
+                    Crown Micro Global is a worldwide Power solar solution provider, offering cutting-edge
+                    technology to provide a sustainable power solution. With more than three decades of experience
+                    in the solar Power industry and a renowned leader in the energy sector worldwide. To value our
+                    clients, we offer customised power solutions for residential and commercial spaces. With a vast
+                    range of products, Including Inverters, UPS, Batteries, and solar Panels to complete energy
+                    storage systems, we bring a complete power solution to ensure Outage-Free Pakistan, in
+                    collaboration with Crown Micro Global International.
+                </p>
+            </div>
+            <div class="worldwide-content">
+                <h2 class="heading theme-color">International Accreditation</h2>
+                <p>
+                    Crown Micro Global officially announced that Sadita Holding Ltd, a recognised global institution,
+                    has
+                    accredited it. This accreditation highlights our commitment to delivering reliable and world-class
+                    power
+                    energy solutions.
+                </p>
+                <p>
+                    We also received an official NOC from the Government of Pakistan to provide reliable solar solutions
+                    for
+                    more homes and businesses. Our alliance with global institutions makes us a trusted brand to our
+                    customers.
+                </p>
+                <h2 class="heading theme-color">Powering Pakistan with Energy-Efficient Solar Solutions</h2>
+                <p>
+                    With the launch of Crown Micro Global Solar inverters in Pakistan, we improve the lifestyle towards
+                    luxury with efficient energy solutions. Our goal is to make this clean, affordable power source
+                    accessible to everyone, whether at home, in a business, or an industry.
+                </p>
+                <p>
+                    As part of the globally trusted Crown Micro Global International brand, we are proud to offer
+                    high-quality, yet affordable, solar solutions in Pakistan. Our team of experts is dedicated to
+                    providing
+                    a wide range of innovative products and customized energy solutions to meet the unique needs of
+                    every
+                    space in the Rural and urban regions of Pakistan.
+                </p>
+                <h2 class="heading theme-color">Solar Inverter & Innovative Products</h2>
+                <p>
+                    With advanced solar inverters models, hybrid, on-grid, and off-grid inverters, we offer a
+                    sustainable,
+                    energy-efficient, advanced, and innovative power solution tailored to the customized needs of every
+                    customer.
+                </p>
+                <p>
+                    Our solar frequency variable drives, installation units, and panels match your needs with an easily
+                    managed LCD power management display. Outputting electricity to the inputs is very transparent,
+                    while
+                    also storing a backup in case of breakdowns.
+                </p>
+                <p>
+                    Crown Micro Global is internationally affiliated with ISO-certified and Quality Control (QC)
+                    Organizations to offer reliable, energy-efficient solar power solutions and other equipment, such as
+                    solar panels and batteries, guaranteeing uninterrupted power supply for household appliances and
+                    large
+                    industries. One step ahead of our competitors, we offer online (Wi-Fi module) and offline UPS
+                    systems
+                    for an energy independence solution, ensuring zero electricity bills.
+                </p>
+                <h2 class="heading theme-color">Installation And Service Anywhere in Pakistan</h2>
+                <p>
+                    Crown Micro Global offers high-quality, affordable, and sustainable innovative Solar Power Solutions
+                    to
+                    meet the energy demands of homes and businesses, making them readily accessible in all cities of
+                    Pakistan. Expert service providers design customized power solutions to help Pakistanis use clean
+                    energy.
+                </p>
+                <p>
+                    With 24/7 customer support, we offer technical solutions and consultations anywhere in Pakistan,
+                    regardless of the size of your home, industry, or business, and provide long-term, reliable energy
+                    solutions with minimal maintenance across Pakistan.
+                </p>
+                <p>
+                    For a greener Pakistan, our range of solar inverters is a perfect solution to ensure optimal power
+                    conversion, with real-time data tracking, fault detection, and remote monitoring, helping users stay
+                    informed about their energy production.
+                </p>
+                <p>
+                    Switch to Crown Micro Global Inverters is the ultimate reliable, affordable, and innovative solution
+                    in
+                    Pakistan.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- Worldwide End -->
+
+    <!-- Installation Guide Start -->
+    <section class="guide">
+        <div class="container">
+            <div class="guide-content">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2 class="subHeading heading--themeBorder">Installation Guide</h2>
+                        <h2 class="heading primary-color">Explore different options for top performance inverter</h2>
+                        <a href="" class="moreBtn">
+                            Read More <i class="fa-regular fa-circle-arrow-right"></i>
+                        </a>
+                        <video src="images/guide-video1.mp4" controls></video>
+                    </div>
+                </div>
+            </div>
+            <div class="guide-card">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <div class="guide-card__content">
+                            <p>
+                                Say goodbye to electricity bills with renewable energy, solar power. Inverter solution
+                                is
+                                one of the best choices at an affordable price. Choose a cleaner and more affordable
+                                Greener
+                                Pakistan today for a carbon-free future for the next generation!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <figure class="guide-card__img">
+                            <img src="images/guide1.webp" alt="image" class="img-fluid">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Installation Guide End -->
+
+    <!-- Consult Start -->
+    <section class="consult">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="consult-card">
+                        <figure class="consult-card__icon">
+                            <img src="images/consult-icon1.png" alt="image" class="img-fluid">
+                        </figure>
+                        <div class="consult-card__content">
+                            <h4 class="title">Save Money</h4>
+                            <p>Ultimate electricity solution to save Cost bills by installing Solar Panels</p>
+                            <a href="" class="arrowBtn"><i class="fa-solid fa-arrow-right"></i> <span>About
+                                    Us</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="consult-card">
+                        <figure class="consult-card__icon">
+                            <img src="images/consult-icon2.png" alt="image" class="img-fluid">
+                        </figure>
+                        <div class="consult-card__content">
+                            <h4 class="title">Home Energy</h4>
+                            <p>Utilize the sun's heat to produce a cost-effective energy solution</p>
+                            <a href="" class="arrowBtn"><i class="fa-solid fa-arrow-right"></i> <span>Careers</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="consult-card">
+                        <figure class="consult-card__icon">
+                            <img src="images/consult-icon3.png" alt="image" class="img-fluid">
+                        </figure>
+                        <div class="consult-card__content">
+                            <h4 class="title">Consult & Planning</h4>
+                            <p>With our customer support, get consultation and installations</p>
+                            <a href="" class="arrowBtn"><i class="fa-solid fa-arrow-right"></i> <span>Support</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="consult-card">
+                        <figure class="consult-card__icon">
+                            <img src="images/consult-icon4.png" alt="image" class="img-fluid">
+                        </figure>
+                        <div class="consult-card__content">
+                            <h4 class="title">Certified Engineer</h4>
+                            <p>Crown Micro has certified engineer offering a reliable energy solution</p>
+                            <a href="" class="arrowBtn"><i class="fa-solid fa-arrow-right"></i>
+                                <span>Countries</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Consult End -->
+
+    <!-- Faq Start -->
+    <section class="faq">
+        <div class="container">
+            <div class="faq-content">
+                <div class="row align-items-center">
+                    <div class="col-md-7">
+                        <h3 class="subHeading heading--border">Improving The Performance Of Solar Energy.</h3>
+                        <h2 class="heading">Discover Independence Through Using The Power Of Solar Panels!</h2>
+                    </div>
+                    <div class="col-md-5">
+                        <p>
+                            Hire Us! For the ultimate power inverter solution in Pakistan. With Crown Micro, get all
+                            solar
+                            supplies from our PV suppliers in North America and Europe. In Pakistan, get our expert
+                            solution
+                            from our service centers, from installation to material sourcing. Secure your future with
+                            solar
+                            power and enjoy a stress-free, luxurious life.
+                        </p>
+                        <div class="btnWrapper mt-4">
+                            <a href="" class="themeBtn themeBtn--light">Learn More</a>
+                            <a href="" class="themeBtn themeBtn--border">About Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-center mt-5">
+                <div class="col-md-6">
+                    <figure class="faq-img">
+                        <img src="images/map1.png" alt="image" class="img-fluid">
+                    </figure>
+                </div>
+                <div class="col-md-6">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    How does a Crown Micro solar inverter work?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>
+                                        A Crown Micro solar inverter converts the DC power generated by solar panels
+                                        into AC
+                                        power for use in homes and businesses. It optimizes the energy output, monitors
+                                        performance, and ensures grid compatibility.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    How can I install a Crown Micro solar inverter?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>
+                                        Crown Micro solar inverters are typically installed by certified professionals.
+                                        Proper installation involves connecting the inverter to the solar panels and
+                                        electrical grid, ensuring proper grounding, and configuring the settings for
+                                        optimal
+                                        performance.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    What is the warranty period for Crown Micro solar inverters?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>
+                                        Crown Micro offers a warranty period of one year for their solar inverters. It
+                                        is
+                                        recommended to check the manufacturer's website or contact their customer
+                                        support
+                                        for the most up-to-date warranty information.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Faq End -->
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-md-3">
+                    <div class="footer-content">
+                        <a href="index.html" class="footer-content__logo">
+                            <img src="images/logo-white.png" class="img-fluid" alt="image">
+                        </a>
+                        <p>
+                            While improving the yield and performance of solar energy products, our PV industry
+                            experience
+                            enables us to provide in-depth material sourcing, financing and supply chain expertise for
+                            every
+                            step.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-content">
+                        <h2>Quick links</h2>
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">Gallery</a></li>
+                            <li><a href="">Projects</a></li>
+                            <li><a href="">Careers</a></li>
+                            <li><a href="">Countries</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-content">
+                        <h2>Our Products</h2>
+                        <ul>
+                            <li><a href="">Inverters</a></li>
+                            <li><a href="">Variable Frequency Drives</a></li>
+                            <li><a href="">UPS</a></li>
+                            <li><a href="">Energy Storage System</a></li>
+                            <li><a href="">Batteries</a></li>
+                            <li><a href="">Solar panels</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-content">
+                        <h2>Quick Contact</h2>
+                        <ul>
+                            <li><a href="tel:(042) 111 977 977">(042) 111 977 977</a></li>
+                            <li><a href="tel:+971 48839373">+971 48839373</a></li>
+                            <li><a href="mailto:info@crownmicroglobal.com">info@crownmicroglobal.com</a></li>
+                            <li>
+                                <a href="">
+                                    Plot No S60806 Jafza South, Jebel Ali, Free Zone Dubai, United Arab Emirates
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyRight">
+            <p>© 2025 crownmicroglobal. All Rights Reserved | Powered by ZEROPIXEL</p>
+        </div>
+    </footer>
+    <!-- searchBtn -->
+    <div class="searchPopup" id="searchBtn">
+        <button class="close" type="button">×</button>
+        <form>
+            <input placeholder="SEARCH" type="search" value="">
+            <div class="srch-btn">
+                <a href="#" class="themeBtn">Search</a>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.3/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.20.0/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/EasePack.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/split-type@0.3.4/umd/index.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.2/dist/lenis.min.js"></script>
+    <script src="js/email-script.js"></script>
+    <script src="js/custom.min.js"></script>
+
+</body>
+
+</html>
